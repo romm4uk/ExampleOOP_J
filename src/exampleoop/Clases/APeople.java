@@ -19,11 +19,15 @@ public abstract class APeople implements CommandPeople                          
 {
     protected int age;                                                          //доступний лише в цьому класі , або наслідниках цього класу
     private String name;                                                        //доступ лише в цьому класі
-    private String surname;
+    private String surname;  
     @Override                                                                   //Переозначення методів
     public String getName() { return name; }                                    //Метод з інтерфейсу 
     public String getSurname() { return surname; }                              //Метод класу щоб отримати значення , але змінити його не можна
-    
+    @Override
+    public void haracteristics()
+    {
+    this.InfoPeople();
+    }
     public APeople(String name, String surname,int age)                         //Конструктор
     {    
         this.name=name;

@@ -12,5 +12,5 @@ package exampleoop.interfaces;
 public interface CommandPeople {
     void InfoPeople();                                                          //Методи які будуть використовуватись в застосованому класі
     String getName();
-    
+    void haracteristics();
 }

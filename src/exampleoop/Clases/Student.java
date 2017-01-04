@@ -13,9 +13,11 @@ public class Student extends APeople                                            
 {
     
 private int raiting;
-    public Student(String name, String surname,int age,int _raiting) {          //конструктор
+private String Color;
+    public Student(String name, String surname,int age,int _raiting, String color) {          //конструктор
         super(name, surname,age);
         this.raiting=_raiting;
+        this.Color=Color;
     }
 public int GetRaiting(){return raiting;}
 public void IsGrant(int rait)                                                   //Функція для визначення чи студент може мати стипендію
@@ -23,6 +25,11 @@ public void IsGrant(int rait)                                                   
 if(rait>10&&this.age>18)
     System.out.print("Grant Yesss\n");
 else System.out.print("Grant Noo((\n");
+}
+
+public void haracteristics(int raiting,String Color)
+{
+System.out.print("This student with "+Color+" hair and raiting: "+raiting+"\n");
 }
    @Override                                                                    
     public void InfoPeople()                                                    //Метод з абстрактного класу, ми його переозначаємо

@@ -16,7 +16,10 @@ public class Employer extends APeople {                                         
         super(name, surname,age);
         this.salary=_salary;
     }
-
+    public void haracteristics(int salary)
+    {
+    System.out.print("Salary  this employer is:"+salary);
+    }
    
 int GetSalary(){return salary;}     
     
